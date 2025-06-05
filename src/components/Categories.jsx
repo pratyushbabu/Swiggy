@@ -1,5 +1,6 @@
 // import React from 'react'
 import React, { useState } from 'react';
+import '../index.css'
 
 export default function Categories() {
     const [data, setData] = useState([])
@@ -29,7 +30,7 @@ export default function Categories() {
                 </div>
             </div>
             <br/>
-            <div className="h-px bg-gray-300 my-4 w-3/4 mx-auto mt-4 " />
+            <div className="h-px bg-gray-300 my-5 w-3/4 mx-auto mt-4 " />
 
         </div>
     )

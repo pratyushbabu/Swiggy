@@ -1,6 +1,10 @@
 
 @import "@flaticon/flaticon-uicons/css/all/all";
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
