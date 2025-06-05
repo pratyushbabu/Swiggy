@@ -2,6 +2,7 @@ import Body from "./components/Body"
 import Categories from "./components/Categories"
 import Head from "./components/Head"
 import Resturent from "./components/Resturent"
+import './index.css'
 
 function App() {
   // const [count, setCount] = useState(0)

@@ -8,7 +8,7 @@ function Head() {
         <div className='flex mr-48'>
             <img className='w-24' src="https://1000logos.net/wp-content/uploads/2021/05/Swiggy-emblem.png" alt="" />
             {/* <div className='felx items-center gap-2'> */}
-              <p className='font-bold underline underline-offset-8 border-black mt-2 '>others</p>
+              <p className='font-bold underline underline-offset-8 border-black mt-2 '>Other</p>
               <i className="fi text-2xl mt-2 text-orange-500 fi-rs-angle-small-down"></i>
             {/* </div> */}
             

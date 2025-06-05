@@ -13,7 +13,7 @@ export default function Categories() {
         <div className='flex flex-col justify-center items-center mt-4'>
             <div className='mb-4'>
                 <div className='flex flex-start ml-2'>
-                    <b>What's on uour mind ?</b>
+                    <b>What's on your mind ?</b>
                 </div>
 
                 <div className='flex gap-6 justify-center items-center' >
