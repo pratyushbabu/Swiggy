@@ -2,21 +2,21 @@ import React from 'react'
 
 function Head() {
   return (
-    <div className='w-full shadow-md h-20 flex justify-center items-center'>
-      <div className='w-full flex justify-around '>
+    <div className='w-full shadow-md h-20 flex justify-c items-center'>
+      <div className='w-full flex justify-between'>
         {/* <p>fdg</p> */}
-        <div className='flex mr-48'>
+        <div className='ml-32'>
             <img className='w-24' src="https://1000logos.net/wp-content/uploads/2021/05/Swiggy-emblem.png" alt="" />
             {/* <div className='felx items-center gap-2'> */}
-              <p className='font-bold underline underline-offset-8 border-black mt-2 '>Other</p>
-              <i className="fi text-2xl mt-2 text-orange-500 fi-rs-angle-small-down"></i>
+              {/* <p className='font-bold underline underline-offset-8 border-black mt-2 '>Other</p> */}
+              {/* <i className="fi text-2xl mt-2 text-orange-500 fi-rs-angle-small-down"></i> */}
               {/* <p className='font-bold underline underline-offset-8 border-black mt-2 '>others</p> */}
               {/* <i className="fi text-2xl mt-2 text-orange-500 fi-rs-angle-small-down"></i> */}
             {/* </div> */}
             
         </div>
 
-        <div className='flex items-center gap-6'>
+        <div className='flex items-center gap-8 mr-48'>
           {/* <div className='flex'>
             <i className="fi fi-rr-shopping-bag"></i>
             &nbsp;
