@@ -10,36 +10,38 @@ function Head() {
             {/* <div className='felx items-center gap-2'> */}
               <p className='font-bold underline underline-offset-8 border-black mt-2 '>Other</p>
               <i className="fi text-2xl mt-2 text-orange-500 fi-rs-angle-small-down"></i>
+              {/* <p className='font-bold underline underline-offset-8 border-black mt-2 '>others</p> */}
+              {/* <i className="fi text-2xl mt-2 text-orange-500 fi-rs-angle-small-down"></i> */}
             {/* </div> */}
             
         </div>
 
         <div className='flex items-center gap-6'>
-          <div className='flex'>
+          {/* <div className='flex'>
             <i className="fi fi-rr-shopping-bag"></i>
             &nbsp;
             <p>Swiggy corporate</p>
-          </div>
+          </div> */}
           <div className='flex'>
             <i className="fi fi-rs-search"></i>
             &nbsp;
             <p>Search</p>
           </div>
-          <div className='flex'>
+          {/* <div className='flex'>
             <i className="fi fi-rr-badge-percent"></i>
             &nbsp;
             <p>Offers</p>
-          </div>
-          <div className='flex'>
+          </div> */}
+          {/* <div className='flex'>
             <i className="fi fi-rr-life-ring"></i>
             &nbsp;
             <p>Help</p>
-          </div>
-          <div className='flex'>
+          </div> */}
+          {/* <div className='flex'>
             <i className="fi fi-rs-user"></i>
             &nbsp;
             <p>Sign in</p>
-          </div>
+          </div> */}
           <div className='flex'>
             <i className="fi fi-rr-square-0"></i>
             &nbsp;

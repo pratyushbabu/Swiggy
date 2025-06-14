@@ -10,7 +10,8 @@ export default function Resturent() {
                     <h3 className="text-xl font-bold mb-4">Top restaurant chains</h3>
 
                 </div>
-                <div className='flex gap-5 justify-center items-center ' >
+                <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6'>
+
                     {
                         ndata.map((ele) =>
                         (<div key={ele.id} style={{ height: "240px", width: "275px" }} className='p-2 transform scale-105 transition duration-300 hover:scale-100'>

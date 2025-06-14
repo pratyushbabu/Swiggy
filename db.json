@@ -39,7 +39,48 @@
       "deliveryTime": "35-40 mins",
       "offer": "ITEMS AT ₹49",
       "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2025/1/9/88004a0f-90eb-4cd3-ba69-542ed97d11cb_707773.JPG"
+    },
+    {
+      "id": 5,
+      "name": "NIC Ice Creams",
+      "cuisine": ["Ice Creams", "Desserts"],
+      "location": "Hatibagan",
+      "rating": 4.8,
+      "deliveryTime": "25-30 mins",
+      "offer": "ITEMS AT ₹148",
+      "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2025/1/10/bb9911d2-05c1-40c8-862e-44f132dc0b57_395927.JPG"
+    },
+    {
+      "id": 6,
+      "name": "Kwality Walls Ice Cream",
+      "cuisine": ["Ice Creams", "Desserts"],
+      "location": "Raja Bazar",
+      "rating": 4.7,
+      "deliveryTime": "20-25 mins",
+      "offer": "₹125 OF ABOVE ₹299",
+      "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2024/6/13/856441a8-ffce-4d78-880f-35271f16ca8e_303261.JPG"
+    },
+    {
+      "id": 7,
+      "name": "Pizza Hut",
+      "cuisine": ["Pizza"],
+      "location": "Esplanade",
+      "rating": 4.4,
+      "deliveryTime": "30-45 mins",
+      "offer": "ITEMS AT ₹59",
+      "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2025/6/9/14c3c7fb-300f-467d-b4c4-86bd26574815_651011.JPG"
+    },
+    {
+      "id": 8,
+      "name": "The Good Bowl",
+      "cuisine": ["Biryani", "pasta", "punjabi"],
+      "location": "Beleghata",
+      "rating": 4.6,
+      "deliveryTime": "30-35 mins",
+      "offer": "15% OFF ABOVE ₹1000",
+      "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/f5cd921a909842adf479ffc7fedd1968"
     }
+
   ],
   "menuItems": [
     {
