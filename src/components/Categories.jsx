@@ -2,8 +2,10 @@
 import React, { useEffect, useState } from 'react';
 import '../index.css'
 
+import App from '../App';
 
-export default function Categories() {
+
+export default function Categories(props) {
     const [data, setData] = useState([])
 
 
@@ -23,14 +25,7 @@ export default function Categories() {
     }, [data.name]);
     // console.log(data)
 
-    const HandleClick = (el) => {
-        // e.target.value=data.name
-        const res=data.filter((ele)=>ele.name==el.name)
-        console.log(res)
 
-
-
-    }
 
     return (
         <div className='flex flex-col justify-center items-center mt-4'>
@@ -46,7 +41,8 @@ export default function Categories() {
 
                             <div key={ele.id} style={{ height: "180px", width: "144px" }}>
                                 {/* <p>{ele.name}</p> */}
-                                <img src={ele.image} onClick={()=>HandleClick(ele.name) } />
+                                
+                                <img src={ele.image} onClick={()=>props.setFoodName(ele.name)} />
                             </div>))
 
                     }

@@ -13,7 +13,7 @@
     {
       "id": 2,
       "name": "Wow!Momo",
-      "cuisine": ["Momos","Chinese", "Fast Food"],
+      "cuisine": ["Momos","Chinese", "Fast Food","Noodles"],
       "location": "Esplanade",
       "rating": 4.4,
       "deliveryTime": "35-40 mins",
