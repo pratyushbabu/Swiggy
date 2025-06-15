@@ -1,13 +1,41 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import '../index.css'
-export default function Resturent() {
+export default function Resturent({name}) {
+
+    
     const [ndata, setNdata] = useState([])
-    const nres = fetch("http://localhost:3000/restaurants").then(rest => { return rest.json() }).then(ndata => setNdata(ndata))
+    useEffect(()=>{
+
+        const fetchResturantData= async()=>{
+            try{
+                const nres = await fetch("http://localhost:3000/restaurants")
+                const result = await nres.json();
+                console.log("This is the result",result)
+                const res = result.filter(el=>el.cuisine.some(c => c.toLowerCase().includes(name.toLowerCase())))
+                // const res = result.filter(el =>el.cuisine.some(c => c.toLowerCase().includes(name.toLowerCase()))
+                    
+
+                console.log(res)
+                setNdata(res)
+            }
+            catch(error){
+                console.error("Error fetching categories:", error);
+            }
+
+        }
+
+        
+       fetchResturantData()
+
+    },[name])
+    
     return (
+        
         <div className='flex flex-col justify-center items-center mt-6 px-4'>
+            
             <div >
                 <div>
-                    <h3 className="text-xl font-bold mb-4">Top restaurant chains</h3>
+                    <h3 className="text-xl font-bold mb-4">Top restaurant chains: <i className='text-orange-600'>{name}</i> </h3>
 
                 </div>
                 <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 '>
@@ -41,9 +69,9 @@ export default function Resturent() {
                         </div>))
                     }
                 </div>
-                {/* <br />
                 <br />
-                <br /> */}
+                <br />
+                <br />
                 <div className=" h-px bg-gray-300 my-6 w-full"></div>
             </div>
 
