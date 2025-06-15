@@ -5,14 +5,17 @@ import Head from "./components/Head"
 import Resturent from "./components/Resturent"
 import './index.css'
 
+
 function App() {
   // const [count, setCount] = useState(0)
+  const [foodName,setFoodName]=useState("")
 
   return (
       <div>
         <Head/>
-        <Categories/>
-        <Resturent/>
+        <Categories foodName={foodName} setFoodName={setFoodName}/>
+   
+        <Resturent name={foodName}/>
         <Footer/>
         {/* <Body/> */}
       </div>

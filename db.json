@@ -3,7 +3,7 @@
     {
       "id": 1,
       "name": "Pizza Corner",
-      "cuisine": ["Pizza", "North Indian","Biryani"],
+      "cuisine": ["Biryani","Pizza", "North Indian"],
       "location": "Hyderabad",
       "rating": 4.3,
       "deliveryTime": "35-40 mins",
@@ -117,7 +117,7 @@
     }
   ],
   "categories": [
-    { "id": 1, "name": "Biriyani", "image" : "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/6ef07bda-b707-48ea-9b14-2594071593d1_Biryani.png"},
+    { "id": 1, "name": "Biryani", "image" : "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/6ef07bda-b707-48ea-9b14-2594071593d1_Biryani.png"},
     { "id": 2, "name": "Pizza" , "image":"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/6ef07bda-b707-48ea-9b14-2594071593d1_Pizzas.png"},
     { "id": 3, "name": "Chinese" , "image":"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/MERCHANDISING_BANNERS/IMAGES/MERCH/2025/1/24/e7e36151-9e90-40eb-b6bb-bb7d946ac219_Chinese2.png"},
     { "id": 4, "name": "Burger" ,"image":"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/8f508de7-e0ac-4ba8-b54d-def9db98959e_burger.png"},
