@@ -41,7 +41,7 @@ export default function Resturent({name}) {
                 <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 '>
 
                     {
-                        ndata.map((ele) =>
+                        ndata.map((ele) => 
                         (<div key={ele.id} style={{ height: "240px", width: "275px" }} className='mb-6 p-2  transform scale-105 transition duration-300 hover:scale-100' >
                     
                             <div className="relative overflow-hidden  ">
