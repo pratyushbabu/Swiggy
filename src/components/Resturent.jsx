@@ -1,53 +1,73 @@
 import React, { useEffect, useState } from 'react'
 import '../index.css'
-export default function Resturent({name}) {
+import { RxCrossCircled } from "react-icons/rx";
 
-    
+export default function Resturent({ name, setFoodName }) {
+
+
     const [ndata, setNdata] = useState([])
-    useEffect(()=>{
 
-        const fetchResturantData= async()=>{
-            try{
+    const [showButton, setShowButton] = useState(false)
+
+    useEffect(() => {
+
+        const fetchResturantData = async () => {
+            try {
                 const nres = await fetch("http://localhost:3000/restaurants")
                 const result = await nres.json();
-                console.log("This is the result",result)
-                const res = result.filter(el=>el.cuisine.some(c => c.toLowerCase().includes(name.toLowerCase())))
+                console.log("This is the result", result)
+                const res = result.filter(el => el.cuisine.some(c => c.toLowerCase().includes(name.toLowerCase())))
                 // const res = result.filter(el =>el.cuisine.some(c => c.toLowerCase().includes(name.toLowerCase()))
-                    
+
 
                 console.log(res)
                 setNdata(res)
             }
-            catch(error){
+            catch (error) {
                 console.error("Error fetching categories:", error);
             }
 
         }
 
-        
-       fetchResturantData()
 
-    },[name])
-    
+        fetchResturantData()
+
+    }, [name, showButton])
+
+
+    const HandleCrossButton = () => {
+        setShowButton(false)
+        setFoodName("")
+
+    }
+
     return (
-        
+
         <div className='flex flex-col justify-center items-center mt-6 px-4'>
-            
+
             <div >
                 <div>
-                    <h3 className="text-xl font-bold mb-4">Top restaurant chains: <i className='text-orange-600'>{name}</i> </h3>
-
+                    <h3 className="text-xl font-bold mb-4 flex items-center ">
+                        Top restaurant chains:
+                        <i className="text-orange-600 ml-1">{name}</i>
+                        {name && !showButton && (
+                            <button onClick={HandleCrossButton} className=" p-1 rounded">
+                                <RxCrossCircled className="text-center" />
+                            </button>
+                        )}
+                    </h3>
                 </div>
+
                 <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 '>
 
                     {
-                        ndata.map((ele) => 
+                        ndata.map((ele) =>
                         (<div key={ele.id} style={{ height: "240px", width: "275px" }} className='mb-6 p-2  transform scale-105 transition duration-300 hover:scale-100' >
-                    
+
                             <div className="relative overflow-hidden  ">
                                 <img src={ele.image} className="w-[450px] h-[170px] object-cover rounded-2xl border-radius  " />
                                 {/* <div className="absolute inset-0  rounded-2xl bottom-0 left-0  bg-black bg-opacity-50 text-white text-center p-2"></div> */}
-                                 <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-black to-transparent rounded-b-2xl"></div>
+                                <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-black to-transparent rounded-b-2xl"></div>
                                 <p className="absolute bottom-0 left-0  text-white font-bold p-2 text-2xl">
                                     {ele.offer}
                                 </p>

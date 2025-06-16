@@ -5,6 +5,7 @@ import Footer from "./components/Footer"
 import Head from "./components/Head"
 import Resturent from "./components/Resturent"
 import './index.css'
+import { BrowserRouter } from 'react-router-dom';
 
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
         <Head/>
         <Categories foodName={foodName} setFoodName={setFoodName}/>
    
-        <Resturent name={foodName}/>
+        <Resturent name={foodName} setFoodName={setFoodName}/>
         <Footer/>
         {/* <Body/> */}
       </div>
@@ -24,3 +25,7 @@ function App() {
 }
 
 export default App
+
+
+
+
