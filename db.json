@@ -111,6 +111,7 @@
       "id": 202,
       "restaurantId": 2,
       "name": "Garlic Bread",
+
       "price": 120,
       "category": "Sides",
       "image": "/images/garlic-bread.jpg"
