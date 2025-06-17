@@ -1,20 +1,26 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom';
+// import {  useNavigate } from 'react-router-dom';
+
+import { Link } from 'react-router-dom';
 
 
 
 function Head() {
-  const navigate=useNavigate()
- const HandleClickHome=()=>{
-  navigate('/')
- }
+  
+
+
 
   return (
     <div className='w-full shadow-md h-20 flex justify-c items-center'>
       <div className='w-full flex justify-between'>
         {/* <p>fdg</p> */}
+        
         <div className='ml-32'>
-            <button onClick={HandleClickHome}><img className='w-24' src="https://1000logos.net/wp-content/uploads/2021/05/Swiggy-emblem.png" alt="" /></button>
+            <Link to="/restaurants">
+            <img className='w-24' src="https://1000logos.net/wp-content/uploads/2021/05/Swiggy-emblem.png" alt="" />
+            </Link>
+            
+            
             {/* <div className='felx items-center gap-2'> */}
               {/* <p className='font-bold underline underline-offset-8 border-black mt-2 '>Other</p> */}
               {/* <i className="fi text-2xl mt-2 text-orange-500 fi-rs-angle-small-down"></i> */}
@@ -23,6 +29,7 @@ function Head() {
             {/* </div> */}
             
         </div>
+        
 
         <div className='flex items-center gap-8 mr-48'>
           {/* <div className='flex'>
@@ -50,11 +57,13 @@ function Head() {
             &nbsp;
             <p>Sign in</p>
           </div> */}
+           <Link to="/cart">
           <div className='flex'>
             <i className="fi fi-rr-square-0"></i>
             &nbsp;
-            <p>Cart</p>
+           <p>Cart</p>
           </div>
+          </Link>
 
         </div>
       </div>

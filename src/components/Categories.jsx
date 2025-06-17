@@ -25,7 +25,6 @@ export default function Categories(props) {
     }, [data.name]);
     // console.log(data)
 
-   
 
     return (
         <div className='flex flex-col justify-center items-center mt-4'>

@@ -5,7 +5,9 @@ import Footer from "./components/Footer"
 import Head from "./components/Head"
 import Resturent from "./components/Resturent"
 import './index.css'
-import { BrowserRouter } from 'react-router-dom';
+import {Routes,Route} from "react-router-dom"
+
+import Cart from "./pages/Cart"
 
 
 function App() {
@@ -15,12 +17,20 @@ function App() {
   return (
       <div>
         <Head/>
-        <Categories foodName={foodName} setFoodName={setFoodName}/>
+        <Routes>
+          <Route path="/restaurants" element={<>
+          <Categories foodName={foodName} setFoodName={setFoodName}/>
+          <Resturent name={foodName} setFoodName={setFoodName}/>
+          </>}/>
+          
+          <Route path="/cart" element={<Cart/>}/>
+        </Routes>
+        
    
-        <Resturent name={foodName} setFoodName={setFoodName}/>
         <Footer/>
         {/* <Body/> */}
       </div>
+
   )
 }
 
