@@ -24,9 +24,9 @@ function App() {
   const shouldShowFooter = !hideFooterPaths.includes(location.pathname);
 
   return (
-      <div>
+    <div>
       <Head />
-        <Routes>
+      <Routes>
         <Route
           path="/"
           element={
@@ -47,10 +47,10 @@ function App() {
           path="/cart"
           element={<Cart restaurantId={restaurantId} />}
         />
-        </Routes>
-        
+      </Routes>
+
       {shouldShowFooter && <Footer />}
-      </div>
+    </div>
   );
 }
 

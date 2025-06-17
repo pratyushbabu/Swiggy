@@ -11,12 +11,12 @@ function Head() {
 
 
   return (
-    <div className='w-full shadow-md h-20 flex justify-c items-center'>
-      <div className='w-full flex justify-between'>
+    <div className='w-full shadow-md h-20 flex justify-c items-center '>
+      <div className='w-full flex justify-between sticky'>
         {/* <p>fdg</p> */}
         
         <div className='ml-32'>
-            <Link to="/restaurants">
+            <Link to="/">
             <img className='w-24' src="https://1000logos.net/wp-content/uploads/2021/05/Swiggy-emblem.png" alt="" />
             </Link>
             
