@@ -3,7 +3,7 @@
     {
       "id": 1,
       "name": "Pizza Corner",
-      "cuisine": ["Biryani","Pizza", "North Indian"],
+      "cuisine": ["Pizza", "North Indian"],
       "location": "Hyderabad",
       "rating": 4.3,
       "deliveryTime": "35-40 mins",
@@ -13,7 +13,7 @@
     {
       "id": 2,
       "name": "Wow!Momo",
-      "cuisine": ["Momos","Chinese", "Fast Food","Noodles"],
+      "cuisine": ["Momos","Chinese", "Fast Food"],
       "location": "Esplanade",
       "rating": 4.4,
       "deliveryTime": "35-40 mins",
@@ -52,13 +52,13 @@
     },
     {
       "id": 6,
-      "name": "Kwality Walls Ice Cream",
-      "cuisine": ["Ice Creams", "Desserts"],
+      "name": "Wow!China",
+      "cuisine": ["Chinese", "Asian","Fast Food","Noodles"],
       "location": "Raja Bazar",
-      "rating": 4.7,
+      "rating": 4.2,
       "deliveryTime": "20-25 mins",
-      "offer": "₹125 OF ABOVE ₹299",
-      "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2024/6/13/856441a8-ffce-4d78-880f-35271f16ca8e_303261.JPG"
+      "offer": "ITEMS AT ₹129",
+      "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2025/6/10/88f317c2-7aa0-462c-ad4b-1f23dc82588a_785282.JPG"
     },
     {
       "id": 7,
