@@ -37,7 +37,11 @@ function Cart(props) {
       {/* Text content */}
       <div className="w-2/3">
         <p className="font-semibold text-lg mb-1">{el.name}</p>
-        <p className="text-gray-600 text-sm mb-2">₹{el.price}</p>
+        <p className="text-sm font-medium">₹{el.price}</p>
+        {/* <p className="text-gray-600 text-sm mb-2">₹{el.price}</p> */}
+        <p className="text-sm text-green-600">★ {el.rating}</p>
+        <br/>
+        <p className="text-sm text-gray-600">{el.description}</p>
         {/* You can uncomment category if needed */}
         {/* <p className="text-gray-500 text-sm">{el.category}</p> */}
       </div>
