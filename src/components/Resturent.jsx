@@ -4,7 +4,7 @@ import { RxCrossCircled } from "react-icons/rx";
 
 import { useNavigate } from 'react-router-dom';
 
-export default function Resturent({ name, setFoodName,setRestaurantId }) {
+export default function Resturent({ name, setFoodName,setRestaurantId,setRestaurant }) {
 
 
     const [ndata, setNdata] = useState([])
@@ -43,7 +43,8 @@ export default function Resturent({ name, setFoodName,setRestaurantId }) {
 
     }
     const navigate = useNavigate();
-    const HandleCardData = (key) => {
+    const HandleCardData = (key,restuName) => {
+        setRestaurant(restuName)
         setRestaurantId(key);        // Save the ID or data
         navigate('/cart');           // Go to the Cart page
   };
@@ -69,7 +70,7 @@ export default function Resturent({ name, setFoodName,setRestaurantId }) {
 
                     {
                         ndata.map((ele) =>
-                        (<div key={ele.id} style={{ height: "240px", width: "275px" }} className='mb-6 p-2  transform scale-105 transition duration-300 hover:scale-100' onClick={()=>HandleCardData(ele.id)} >
+                        (<div key={ele.id} style={{ height: "240px", width: "275px" }} className='mb-6 p-2  transform scale-105 transition duration-300 hover:scale-100' onClick={()=>HandleCardData(ele.id,ele.name)} >
 
                             <div className="relative overflow-hidden  ">
                                 <img src={ele.image} className="w-[450px] h-[170px] object-cover rounded-2xl border-radius  " />

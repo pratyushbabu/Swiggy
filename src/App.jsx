@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { use, useState } from "react"
 import Body from "./components/Body"
 import Categories from "./components/Categories"
 import Footer from "./components/Footer"
@@ -9,6 +9,7 @@ import {Routes,Route} from "react-router-dom"
 
 import Cart from "./pages/Cart"
 import { useLocation } from 'react-router-dom';
+import Checkout from "./pages/Checkout"
 
 
 
@@ -16,11 +17,15 @@ function App() {
   // const [count, setCount] = useState(0)
   const [foodName,setFoodName]=useState("")
 
+  const [restaurant,setRestaurant]=useState("")
+
   const [restaurantId,setRestaurantId]=useState()
+
+  const [cartLength,setCartLength]=useState()
 
   const location = useLocation();
 
-  const hideFooterPaths = ['/cart']; // Add more paths if needed
+  const hideFooterPaths = ['/cart','/checkout']; // Add more paths if needed
   const shouldShowFooter = !hideFooterPaths.includes(location.pathname);
 
   return (
@@ -36,6 +41,8 @@ function App() {
                 setFoodName={setFoodName}
               />
               <Resturent
+                // restaurant={restaurant}
+                setRestaurant={setRestaurant}
                 name={foodName}
                 setFoodName={setFoodName}
                 setRestaurantId={setRestaurantId}
@@ -45,8 +52,10 @@ function App() {
         />
         <Route
           path="/cart"
-          element={<Cart restaurantId={restaurantId} />}
+          element={<Cart restaurantId={restaurantId}  name={foodName} restuName={restaurant}/>}
         />
+
+        <Route path="/checkout" element={<Checkout name={foodName} restuName={restaurant}/>}/>
       </Routes>
 
       {shouldShowFooter && <Footer />}

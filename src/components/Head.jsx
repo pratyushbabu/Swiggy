@@ -3,12 +3,8 @@ import React from 'react'
 
 import { Link } from 'react-router-dom';
 
-
-
 function Head() {
   
-
-
 
   return (
     <div className='w-full shadow-md h-20 flex justify-c items-center '>
@@ -57,7 +53,7 @@ function Head() {
             &nbsp;
             <p>Sign in</p>
           </div> */}
-           <Link to="/cart">
+           <Link to="/checkout">
           <div className='flex'>
             <i className="fi fi-rr-square-0"></i>
             &nbsp;
