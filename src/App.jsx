@@ -15,6 +15,7 @@ import Checkout from "./pages/Checkout"
 
 function App() {
   // const [count, setCount] = useState(0)
+
   const [foodName,setFoodName]=useState("")
 
   const [restaurant,setRestaurant]=useState("")
@@ -23,14 +24,21 @@ function App() {
 
   const [cartLength,setCartLength]=useState()
 
+  const [quantity,setQuantity]=useState(0)
+
   const location = useLocation();
 
-  const hideFooterPaths = ['/cart','/checkout']; // Add more paths if needed
+  const hideFooterPaths = ['/restaurant','/checkout']; // Add more paths if needed
   const shouldShowFooter = !hideFooterPaths.includes(location.pathname);
 
+
+
+  console.log(quantity)
+
   return (
+    
     <div>
-      <Head />
+      <Head quantity={quantity}/>
       <Routes>
         <Route
           path="/"
@@ -51,11 +59,11 @@ function App() {
           }
         />
         <Route
-          path="/cart"
-          element={<Cart restaurantId={restaurantId}  name={foodName} restuName={restaurant}/>}
+          path="/restaurant"
+          element={<Cart restaurantId={restaurantId}  name={foodName} restuName={restaurant} setQuantity={setQuantity}/>}
         />
 
-        <Route path="/checkout" element={<Checkout name={foodName} restuName={restaurant}/>}/>
+        <Route path="/checkout" element={<Checkout name={foodName} restuName={restaurant} quantity={quantity} setQuantity={setQuantity}/>}/>
       </Routes>
 
       {shouldShowFooter && <Footer />}

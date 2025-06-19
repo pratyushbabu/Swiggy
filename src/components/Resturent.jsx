@@ -46,7 +46,7 @@ export default function Resturent({ name, setFoodName,setRestaurantId,setRestaur
     const HandleCardData = (key,restuName) => {
         setRestaurant(restuName)
         setRestaurantId(key);        // Save the ID or data
-        navigate('/cart');           // Go to the Cart page
+        navigate('/restaurant');           // Go to the Cart page
   };
 
     return (

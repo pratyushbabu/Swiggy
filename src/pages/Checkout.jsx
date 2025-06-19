@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
-function Checkout() {
+function Checkout(props) {
   const [cartData, setCartData] = useState([]);
 
   const fetchCartData = () => {
@@ -14,6 +16,7 @@ function Checkout() {
 
   const updateQuantity = async (id, newQty) => {
     try {
+        props.setQuantity(newQty)
       if (newQty < 1) {
         await fetch(`http://localhost:3000/checkout/${id}`, { method: 'DELETE' });
         fetchCartData();
@@ -31,10 +34,32 @@ function Checkout() {
     }
   };
 
+  const HandlePlaceOrder = async (ids) => {
+    try {
+
+        props.setQuantity(0)
+      await Promise.all(
+        ids.map(id =>
+          fetch(`http://localhost:3000/checkout/${id}`, { method: 'DELETE' })
+        )
+      );
+
+      toast.success("Order placed successfully!", {
+        position: "top-right",
+        autoClose: 3000,
+      });
+
+      fetchCartData();
+    } catch (err) {
+      toast.error("❌ Failed to place order. Try again.");
+    }
+  };
+
   const totalPrice = () => cartData.reduce((a, i) => a + i.price * i.quantity, 0);
 
   return (
     <div className="max-w-4xl mx-auto p-4">
+      <ToastContainer />
       <h1 className="text-2xl font-bold mb-6">🛒 Your Cart</h1>
 
       {cartData.length === 0 ? (
@@ -74,6 +99,13 @@ function Checkout() {
           ))}
 
           <div className="text-right mt-6 text-xl font-bold">Total: ₹{totalPrice()}</div>
+
+          <button
+            onClick={() => HandlePlaceOrder(cartData.map(el => el.id))}
+            className='w-80 mx-auto flex justify-center items-center border-2 border-solid bg-green-600 p-2 rounded-md'
+          >
+            <b className='text-xl text-white'>Place Your Order</b>
+          </button>
         </div>
       )}
     </div>

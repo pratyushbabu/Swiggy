@@ -1,15 +1,5 @@
 {
-  "checkout": [
-    {
-      "id": "b498",
-      "foodName": "Corn Cheese Korean Spicy Momo - New",
-      "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/FOOD_CATALOG/IMAGES/CMS/2025/5/21/ecb9d68e-42f6-49aa-9448-c6b6c0a572a1_7788a5b0-35a0-47a0-ae83-23292803403b.png",
-      "price": 170,
-      "quantity": 1,
-      "description": "Serves 1 | Crispy fried Corn Cheese 5pcs Momo filled with a creamy, flavorful stuffing, served in a spicy and sweet Gochujang sauce that blends bold Korean flavors for a unique and tasty twist. (Serves 1). New",
-      "restaurant": "Wow!Momo"
-    }
-  ],
+  "checkout": [],
   "restaurants": [
     {
       "id": "1",

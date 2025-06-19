@@ -3,7 +3,9 @@ import React from 'react'
 
 import { Link } from 'react-router-dom';
 
-function Head() {
+function Head(props) {
+
+  console.log("this props--->",props)
   
 
   return (
@@ -55,7 +57,8 @@ function Head() {
           </div> */}
            <Link to="/checkout">
           <div className='flex'>
-            <i className="fi fi-rr-square-0"></i>
+           <i className={`fi fi-rr-square-${props.quantity}`}></i>
+
             &nbsp;
            <p>Cart</p>
           </div>
