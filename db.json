@@ -117,7 +117,7 @@
       "name": "Margherita",
       "price": 250,
       "rating": 4.1,
-      "category": "Main Course",
+      "category": "veg",
       "description": "Pizza topped with our herb-infused signature pan sauce and 100% mozzarella cheese. A classic treat for all cheese lovers out there! (PAN Per/Med-292 Kcal/100g | TnC-293 Kcal/100g | Stuffed Crust Add : Per: 227 Kcal/100g | Med: 216 Kcal/100g) Contains Cereals containing Gluten (Wheat), Soya and Milk & Milk Products.",
       "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/FOOD_CATALOG/IMAGES/CMS/2025/4/17/ef2f1053-c8e3-4072-aaa7-4539a67c8554_e8da5065-4d03-47d7-bad7-5413398a1564.jpg_compressed"
     },
@@ -127,7 +127,7 @@
       "name": "Veggie Feast",
       "price": 180,
       "rating": 4.2,
-      "category": "Main Course",
+      "category": "veg",
       "description": "Serves 1 | Herbed onion and green capsicum, juicy sweet corn & 100% mozzarella cheese with flavourful pan sauce (PAN Per/Med-269 Kcal/100g | TnC-274 Kcal/100g | Stuffed Crust Add : Per: 227 Kcal/100g | Med: 216 Kcal/100g) Contains Cereals containing Gluten (Wheat), Soya and Milk & Milk Products.",
       "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/FOOD_CATALOG/IMAGES/CMS/2025/4/17/ee9985e4-828b-4a0e-b99b-656442e80877_7492ef8f-5b57-4ca4-86e6-4a8981c38510.jpg_compressed"
     },
@@ -137,7 +137,7 @@
       "name": "Garlic-to-pizza",
       "price": 275,
       "rating": 4.1,
-      "category": "Main Course",
+      "category": "veg",
       "description": "Hot & Garlic Dip with onions, Capsicum, Paneer, Mushroom, Jalapenos. [Fat-12 per 100 g, Protein-14.8 per 100 g, Carbohydrate-24.9 per 100 g, Sugar-2.2 per 100 g, Calories-266.7 4k.cal]Nutritional information per 100g.",
       "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/l4qlbeovnvowequ61voq"
     },
@@ -147,7 +147,7 @@
       "name": "Cheesy Macaroni Veg Pizza",
       "price": 275,
       "rating": 3.6,
-      "category": "Main Course",
+      "category": "non veg",
       "description": "Paneer, Onions, Capsicum, Olives, Baby Corn With Loads Of Cheese.",
       "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/qshil15ztkifwocci9iw"
     },
@@ -157,7 +157,7 @@
       "name": "Bbq Chicken Pizza Regular",
       "price": 129,
       "rating": 3.7,
-      "category": "Main Course",
+      "category": "non veg",
       "description": "Bbq Chicken On A Pizza Base With Loads Of Cheese & In House Bbq Sauce.",
       "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/FOOD_CATALOG/IMAGES/CMS/2025/5/8/1d2048dd-cded-4f9a-a3f6-9e9efc82a942_4ef3f79c-eafc-4247-bc37-3dc262e135ee.JPG"
     },

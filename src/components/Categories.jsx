@@ -29,7 +29,7 @@ export default function Categories(props) {
     return (
         <div className='flex flex-col justify-center items-center mt-4'>
             <div className='mb-4'>
-                <div className='flex flex-start ml-2'>
+                <div className='flex flex-start ml-2 text-2xl'>
                     <b>What's on your mind ?</b>
                 </div>
 

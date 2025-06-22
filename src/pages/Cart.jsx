@@ -35,69 +35,69 @@ function Cart(props) {
   }, [restaurantId]);
 
 
-useEffect(() => {
+  useEffect(() => {
     const totalQuantity = checkoutData.reduce((sum, item) => sum + item.quantity, 0);
     localStorage.setItem("totalQuantity", totalQuantity);
     props.setQuantity(totalQuantity)
   }, [checkoutData]);
 
   const handleAdd = async (item) => {
-  try {
-    const existing = checkoutData.find(ci => ci.foodName === item.name);
+    try {
+      const existing = checkoutData.find(ci => ci.foodName === item.name);
 
-    // Check if cart has items from a different restaurant
-    const otherRestaurantItem = checkoutData.find(ci => ci.restaurant !== restaurantName);
+      // Check if cart has items from a different restaurant
+      const otherRestaurantItem = checkoutData.find(ci => ci.restaurant !== restaurantName);
 
-    if (otherRestaurantItem) {
-      const confirmReplace = window.confirm(
-        "Your cart contains items from another restaurant. Do you want to replace them with items from this one?"
-      );
+      if (otherRestaurantItem) {
+        const confirmReplace = window.confirm(
+          "Your cart contains items from another restaurant. Do you want to replace them with items from this one?"
+        );
 
-      if (!confirmReplace) return;
+        if (!confirmReplace) return;
 
-      // Clear existing cart
-      for (const ci of checkoutData) {
-        await fetch(`http://localhost:3000/checkout/${ci.id}`, {
-          method: "DELETE",
+        // Clear existing cart
+        for (const ci of checkoutData) {
+          await fetch(`http://localhost:3000/checkout/${ci.id}`, {
+            method: "DELETE",
+          });
+        }
+
+        // Reset checkoutData after clearing
+        setCheckoutData([]);
+      }
+
+      if (existing) {
+
+        await fetch(`http://localhost:3000/checkout/${existing.id}`, {
+          method: "PATCH",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ quantity: existing.quantity + 1 }),
+        });
+      } else {
+
+
+        await fetch("http://localhost:3000/checkout", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            foodName: item.name,
+            image: item.image,
+            price: Number(item.price),
+            quantity: 1,
+            description: item.description,
+            restaurant: restaurantName,
+          }),
         });
       }
 
-      // Reset checkoutData after clearing
-      setCheckoutData([]);
+      const updated = await fetch("http://localhost:3000/checkout");
+      const updatedData = await updated.json();
+      setCheckoutData(updatedData);
+
+    } catch (error) {
+      console.error("Error handling add to cart:", error);
     }
-
-    if (existing) {
-       
-      await fetch(`http://localhost:3000/checkout/${existing.id}`, {
-        method: "PATCH",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ quantity: existing.quantity + 1 }),
-      });
-    } else {
-
-
-      await fetch("http://localhost:3000/checkout", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          foodName: item.name,
-          image: item.image,
-          price: Number(item.price),
-          quantity: 1,
-          description: item.description,
-          restaurant: restaurantName,
-        }),
-      });
-    }
-
-    const updated = await fetch("http://localhost:3000/checkout");
-    const updatedData = await updated.json();
-    setCheckoutData(updatedData);
-
-  } catch (error) {
-    console.error("Error handling add to cart:", error);
-  }
-};
+  };
 
 
   const updateQuantity = async (id, qty) => {
@@ -123,6 +123,10 @@ useEffect(() => {
   return (
     <div className="max-w-5xl mx-auto px-4 py-6">
       <h2 className="text-xl font-bold mb-4">{restaurantName}</h2>
+      <div className='text-center'>
+          <b>🍕🍔🍟🌭🍿~ 🧑‍🍳MENU🧑‍🍳~ 🥪🌮🍗🥠🍜</b>
+      </div>
+      
 
       {menu.map((el) => {
         const existing = checkoutData.find(item => item.foodName === el.name);
@@ -137,32 +141,43 @@ useEffect(() => {
             </div>
 
             <div className="relative w-[160px] h-[110px]">
+              {/* Gradient overlay */}
+              <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-black to-transparent rounded-b-xl z-10"></div>
+
+              {/* Image */}
               <img
                 src={el.image}
                 alt={el.name}
                 className="w-full h-full object-cover rounded-xl"
               />
+
+              {/* Quantity controls */}
               {existing ? (
-                <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex items-center gap-2">
+                <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 z-20 flex items-center gap-2 bg-white p-1 rounded shadow">
                   <button
                     onClick={() => updateQuantity(existing.id, existing.quantity - 1)}
-                    className="px-3 py-1 bg-gray-200 rounded hover:bg-gray-300 text-lg font-bold"
-                  >-</button>
-                  <span>{existing.quantity}</span>
+                    className="px-3 py-1 bg-gray-200 rounded hover:bg-gray-300 text-lg font-bold text-green-600"
+                  >
+                    -
+                  </button>
+                  <span className="text-black font-bold">{existing.quantity}</span>
                   <button
                     onClick={() => updateQuantity(existing.id, existing.quantity + 1)}
-                    className="px-3 py-1 bg-gray-200 rounded hover:bg-gray-300 text-lg font-bold"
-                  >+</button>
+                    className="px-3 py-1 bg-gray-200 rounded hover:bg-gray-300 text-lg font-bold text-green-600 "
+                  >
+                    +
+                  </button>
                 </div>
               ) : (
                 <button
                   onClick={() => handleAdd(el)}
-                  className="absolute bottom-2 left-1/2 transform -translate-x-1/2 px-4 py-1 border text-green-500 font-semibold text-sm border-gray-400 bg-white shadow-md rounded-md hover:shadow-lg"
+                  className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 px-4 py-1 border text-green-600 font-semibold text-sm border-gray-400 bg-white shadow-md rounded-md hover:shadow-lg z-20"
                 >
                   Add
                 </button>
               )}
             </div>
+
           </div>
         );
       })}

@@ -23,16 +23,16 @@ export default function Footer() {
             </div> */}
 
             {/* Main Footer Content */}
-            <div className="flex justify-center">
+            <div className="flex justify-center items-center">
                 {/* Logo */}
                 <div className="col-span-2 md:col-span-1">
-                    <div className="flex flex-col gap-2">
-                        <img
+                    <div className="flex flex-col gap-2  items-center">
+                        <img 
                             src="https://www.creativefabrica.com/wp-content/uploads/2018/10/Fast-Delivery-food-logo-by-DEEMKA-STUDIO-580x406.jpg"
                             alt="Swiggy Logo"
                             className="w-20"
                         />
-                        <p className="text-gray-600">© {new Date().getFullYear()} Pratyush Kundu.All rights reserved</p>
+                        <p className="text-gray-600">© {new Date().getFullYear()} Foodies.All rights reserved</p>
                     </div>
                 </div>
 
