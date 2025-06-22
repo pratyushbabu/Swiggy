@@ -59,7 +59,7 @@ function App() {
           }
         />
         <Route
-          path="/restaurant"
+          path="/restaurant/:id"
           element={<Cart restaurantId={restaurantId}  name={foodName} restuName={restaurant} setQuantity={setQuantity}/>}
         />
 

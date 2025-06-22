@@ -16,6 +16,8 @@ function Checkout(props) {
 
   const updateQuantity = async (id, newQty) => {
     try {
+        
+        localStorage.setItem("totalQuantity", newQty)
         props.setQuantity(newQty)
       if (newQty < 1) {
         await fetch(`http://localhost:3000/checkout/${id}`, { method: 'DELETE' });
@@ -38,6 +40,8 @@ function Checkout(props) {
     try {
 
         props.setQuantity(0)
+        localStorage.setItem("totalQuantity", 0);
+
       await Promise.all(
         ids.map(id =>
           fetch(`http://localhost:3000/checkout/${id}`, { method: 'DELETE' })
