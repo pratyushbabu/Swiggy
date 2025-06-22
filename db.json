@@ -134,32 +134,32 @@
     {
       "id": "103",
       "restaurantId": 1,
-      "name": "Margherita",
-      "price": 250,
+      "name": "Garlic-to-pizza",
+      "price": 275,
       "rating": 4.1,
       "category": "Main Course",
-      "description": "Pizza topped with our herb-infused signature pan sauce and 100% mozzarella cheese. A classic treat for all cheese lovers out there! (PAN Per/Med-292 Kcal/100g | TnC-293 Kcal/100g | Stuffed Crust Add : Per: 227 Kcal/100g | Med: 216 Kcal/100g) Contains Cereals containing Gluten (Wheat), Soya and Milk & Milk Products.",
-      "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/FOOD_CATALOG/IMAGES/CMS/2025/4/17/ef2f1053-c8e3-4072-aaa7-4539a67c8554_e8da5065-4d03-47d7-bad7-5413398a1564.jpg_compressed"
+      "description": "Hot & Garlic Dip with onions, Capsicum, Paneer, Mushroom, Jalapenos. [Fat-12 per 100 g, Protein-14.8 per 100 g, Carbohydrate-24.9 per 100 g, Sugar-2.2 per 100 g, Calories-266.7 4k.cal]Nutritional information per 100g.",
+      "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/l4qlbeovnvowequ61voq"
     },
     {
       "id": "104",
       "restaurantId": 1,
-      "name": "Veggie Feast",
-      "price": 180,
-      "rating": 4.2,
+      "name": "Cheesy Macaroni Veg Pizza",
+      "price": 275,
+      "rating": 3.6,
       "category": "Main Course",
-      "description": "Serves 1 | Herbed onion and green capsicum, juicy sweet corn & 100% mozzarella cheese with flavourful pan sauce (PAN Per/Med-269 Kcal/100g | TnC-274 Kcal/100g | Stuffed Crust Add : Per: 227 Kcal/100g | Med: 216 Kcal/100g) Contains Cereals containing Gluten (Wheat), Soya and Milk & Milk Products.",
-      "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/FOOD_CATALOG/IMAGES/CMS/2025/4/17/ee9985e4-828b-4a0e-b99b-656442e80877_7492ef8f-5b57-4ca4-86e6-4a8981c38510.jpg_compressed"
+      "description": "Paneer, Onions, Capsicum, Olives, Baby Corn With Loads Of Cheese.",
+      "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/qshil15ztkifwocci9iw"
     },
     {
       "id": "105",
       "restaurantId": 1,
-      "name": "Veggie Feast",
-      "price": 180,
-      "rating": 4.2,
+      "name": "Bbq Chicken Pizza Regular",
+      "price": 129,
+      "rating": 3.7,
       "category": "Main Course",
-      "description": "Serves 1 | Herbed onion and green capsicum, juicy sweet corn & 100% mozzarella cheese with flavourful pan sauce (PAN Per/Med-269 Kcal/100g | TnC-274 Kcal/100g | Stuffed Crust Add : Per: 227 Kcal/100g | Med: 216 Kcal/100g) Contains Cereals containing Gluten (Wheat), Soya and Milk & Milk Products.",
-      "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/FOOD_CATALOG/IMAGES/CMS/2025/4/17/ee9985e4-828b-4a0e-b99b-656442e80877_7492ef8f-5b57-4ca4-86e6-4a8981c38510.jpg_compressed"
+      "description": "Bbq Chicken On A Pizza Base With Loads Of Cheese & In House Bbq Sauce.",
+      "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/FOOD_CATALOG/IMAGES/CMS/2025/5/8/1d2048dd-cded-4f9a-a3f6-9e9efc82a942_4ef3f79c-eafc-4247-bc37-3dc262e135ee.JPG"
     },
     {
       "id": "201",
@@ -184,42 +184,42 @@
     {
       "id": "203",
       "restaurantId": 2,
-      "name": "Veggie Feast",
-      "price": 180,
-      "rating": 4.2,
+      "name": "Veg Korean Spicy Momo - New",
+      "price": 99,
+      "rating": 5,
       "category": "Main Course",
-      "description": "Serves 1 | Herbed onion and green capsicum, juicy sweet corn & 100% mozzarella cheese with flavourful pan sauce (PAN Per/Med-269 Kcal/100g | TnC-274 Kcal/100g | Stuffed Crust Add : Per: 227 Kcal/100g | Med: 216 Kcal/100g) Contains Cereals containing Gluten (Wheat), Soya and Milk & Milk Products.",
-      "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/FOOD_CATALOG/IMAGES/CMS/2025/4/17/ee9985e4-828b-4a0e-b99b-656442e80877_7492ef8f-5b57-4ca4-86e6-4a8981c38510.jpg_compressed"
+      "description": "Serves 1 | Crispy fried Veg Pahari Feast 5pcs Momo filled with a flavorful, savory stuffing, served in a spicy-sweet Gochujang sauce that brings a bold Korean twist to every bite. (Serves 1). New",
+      "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/FOOD_CATALOG/IMAGES/CMS/2025/5/21/87252e11-a3ca-4b46-91da-b29e96852706_9d63c42a-1643-45b4-ad5e-0623db6fb457.png"
     },
     {
       "id": "204",
       "restaurantId": 2,
-      "name": "Corn Cheese Korean Spicy Momo - New",
-      "price": 170,
-      "rating": 4.3,
+      "name": "Chicken Korean Spicy Momo - New",
+      "price": 99,
+      "rating": 4.7,
       "category": "Pizza",
-      "description": "Serves 1 | Crispy fried Corn Cheese 5pcs Momo filled with a creamy, flavorful stuffing, served in a spicy and sweet Gochujang sauce that blends bold Korean flavors for a unique and tasty twist. (Serves 1). New",
-      "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/FOOD_CATALOG/IMAGES/CMS/2025/5/21/ecb9d68e-42f6-49aa-9448-c6b6c0a572a1_7788a5b0-35a0-47a0-ae83-23292803403b.png"
+      "description": "Serves 1 | Crispy fried Chicken Pahari Feast 5pcs Momo filled with a rich, flavorful stuffing, served in a spicy and sweet Gochujang sauce that infuses bold Korean flavors into every bite. (Serves 1). New",
+      "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/FOOD_CATALOG/IMAGES/CMS/2025/5/21/bacef87e-6f15-44e1-91f2-9b79d4ad7d72_4ea88ed4-501b-4e0f-8c04-b22c20a4c289.png"
     },
     {
       "id": "205",
       "restaurantId": 2,
-      "name": "Chicken Cheese Korean Spicy Momo - New",
-      "price": 170,
-      "rating": 4.4,
+      "name": "Veg Darjeeling Steam Momo",
+      "price": 99,
+      "rating": 4.1,
       "category": "Sides",
-      "description": "Serves 1 | Crispy fried Chicken Cheese 5pcs Momo filled with a rich, cheesy chicken stuffing, served in a spicy and sweet Gochujang sauce that brings bold and vibrant Korean flavors to every bite. (Serves 1). New",
-      "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/FOOD_CATALOG/IMAGES/CMS/2025/5/21/946ce179-7e61-48d1-9fca-62b0ca61497b_8bfd4eb8-11c6-4c57-9b3e-505c4854c5cf.png"
+      "description": "Momo stuffed with freshly chopped vegetables (onion, carrot, cabbage, beans & coriander), herbs and pinch of spices. Served with authentic Darjeeling Momo sauce and we don't serve green sauce (5 pcs).Steam momos taste best when eaten with hand. 100 gms/ 187.98 kcal. (Serves 1).",
+      "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/FOOD_CATALOG/IMAGES/CMS/2025/5/21/4bf5f59d-f072-4f15-8a23-680195ac6a34_17cb2a4c-4aed-405f-917c-fecfd24f5351.png_compressed"
     },
     {
       "id": "206",
       "restaurantId": 3,
-      "name": "Wednesday Chicken Bucket",
-      "price": 719,
-      "rating": 4.5,
+      "name": "Korean & Thai Roll Chicken Meal",
+      "price": 569,
+      "rating": 3.7,
       "category": "Pizza",
-      "description": "Enjoy Special Wednesday Bucket with flat 37% off on 10 pcs of Hot & Crispy Chicken",
-      "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/kubsukd1h9bu2uic6f1u"
+      "description": "Rs. 133 Off on Korean Tangy Roll & Thai Spicy Roll, Large Popcorn, Large Fries & Pepsi PET 475ml",
+      "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/FOOD_CATALOG/IMAGES/CMS/2024/12/12/76d3e89f-2eec-4a04-8c0d-bd82bf153d78_6b7961a1-5a28-482a-a58d-c8e3c03fe112.jpg"
     },
     {
       "id": "207",
@@ -244,22 +244,22 @@
     {
       "id": "209",
       "restaurantId": 3,
-      "name": "Wednesday Strips Chicken Bucket",
+      "name": "Indian Tandoori Roll Chicken Meal",
       "price": 419,
-      "rating": 4.6,
+      "rating": 4.3,
       "category": "Pizza",
-      "description": "Wednesdays are for Fun! Flat 52% off on 12 pc chicken Peri Peri Boneless Strips served with 4 delicious dips",
-      "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/FOOD_CATALOG/IMAGES/CMS/2024/12/11/81913295-3115-4144-9a50-8af5a8a8f687_59f74cbe-3fe1-4df6-9e2a-ab8cdf99054f.jpg"
+      "description": "Save Rs. 75 on Indian Tandoori Roll, Classic Zinger Burger, Medium Fries & Pepsi PET 475ml",
+      "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/FOOD_CATALOG/IMAGES/CMS/2024/12/10/6b6f3b25-fed1-4e21-afa4-0810da0f2059_b7efdb4b-1568-47b0-9432-1030f6e7ea31.jpg"
     },
     {
       "id": "210",
       "restaurantId": 3,
-      "name": "Wednesday Strips Chicken Bucket",
-      "price": 419,
-      "rating": 4.6,
+      "name": "Korean Tangy Roll & Popcorn Chicken Meal",
+      "price": 319,
+      "rating": 4.1,
       "category": "Pizza",
-      "description": "Wednesdays are for Fun! Flat 52% off on 12 pc chicken Peri Peri Boneless Strips served with 4 delicious dips",
-      "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/FOOD_CATALOG/IMAGES/CMS/2024/12/11/81913295-3115-4144-9a50-8af5a8a8f687_59f74cbe-3fe1-4df6-9e2a-ab8cdf99054f.jpg"
+      "description": "Save Rs. 56 with Korean Tangy Chicken Roll, Medium Popcorn and Pepsi PET 475ml",
+      "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/FOOD_CATALOG/IMAGES/CMS/2024/12/10/213c8941-ef28-41f5-b4b3-81d1d7dc785d_2ddc27a9-dbf7-4164-84c7-06b2e079b10a.jpg"
     },
     {
       "id": "211",
@@ -284,32 +284,32 @@
     {
       "id": "213",
       "restaurantId": 4,
-      "name": "Korean McSpicy®Paneer Burger*",
-      "price": 227,
+      "name": "Ranveer Singh Meal McVeggie Xplode",
+      "price": 315,
       "rating": 4.7,
       "category": "Pizza",
-      "description": "Korean Crispy and spicy paneer patty with Gochujang Sauce and crispy lettuce topping and Red cabbage.",
-      "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/FOOD_CATALOG/IMAGES/CMS/2025/3/14/37c9b131-be5b-45ad-a48f-0e55a2c3c908_082eb9e8-8a62-45d5-b1f8-c9288b6dd4b4.png"
+      "description": "",
+      "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/FOOD_CATALOG/IMAGES/CMS/2025/6/14/fd2ef74e-353d-4076-9c7d-448f4142a42e_5d833bf1-6fe4-40b2-8bec-ac9496b9e3f7.png"
     },
     {
       "id": "214",
       "restaurantId": 4,
-      "name": "Korean McSpicy®Chicken Burger*",
-      "price": 239,
+      "name": "Large EVM McVeggie Xplode",
+      "price": 345,
       "rating": 4.8,
       "category": "Pizza",
-      "description": "Juicy Chicken meat coated in crispy batter with a kick of spice topped with a Gochujang Sauce and crispy lettuce topping and Red cabbage.",
-      "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/FOOD_CATALOG/IMAGES/CMS/2025/3/14/925f29c6-e229-44f2-99bf-ef70c8be28eb_b4e6de3c-d6a1-4c96-ade2-df080a535d03.png"
+      "description": "",
+      "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/FOOD_CATALOG/IMAGES/CMS/2025/6/13/8042d73d-850a-4666-bf62-c15deda36d6f_16d3bc17-24af-4866-bad8-a540e6c5f3e5.png"
     },
     {
       "id": "215",
       "restaurantId": 4,
-      "name": "Korean McSpicy®Chicken Burger*",
-      "price": 239,
+      "name": "EVM McVeggie Xplode",
+      "price": 319,
       "rating": 4.8,
       "category": "Pizza",
-      "description": "Juicy Chicken meat coated in crispy batter with a kick of spice topped with a Gochujang Sauce and crispy lettuce topping and Red cabbage.",
-      "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/FOOD_CATALOG/IMAGES/CMS/2025/3/14/925f29c6-e229-44f2-99bf-ef70c8be28eb_b4e6de3c-d6a1-4c96-ade2-df080a535d03.png"
+      "description": "",
+      "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/FOOD_CATALOG/IMAGES/CMS/2025/6/13/5f58cd8d-894b-45c5-9abd-bfb3c6841b99_dff2724a-a176-49d7-96e6-88da0b23ebe3.png"
     },
     {
       "id": "216",
@@ -384,32 +384,32 @@
     {
       "id": "222",
       "restaurantId": 6,
-      "name": "Veggie Hakka Noodles Regular",
+      "name": "Veg Chilly Oil Noodles",
       "price": 129,
-      "rating": 4.7,
+      "rating": 4.3,
       "category": "Pizza",
-      "description": "",
-      "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/abmo32th97dyasxyft28"
+      "description": "Serves 1 | Stir-fried noodles tossed in a bold and spicy crispy chili oil seasoning, delivering an irresistible crunch and heat. Served hot for a flavorful and satisfying experience. (Serves 1-2) No Added MSG.",
+      "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/FOOD_CATALOG/IMAGES/CMS/2025/5/23/a6d1bc4c-3df5-4e33-95fa-3312cc5a944d_66b38fda-ebfd-4e92-98a4-5eae6dc10f33.png"
     },
     {
       "id": "223",
       "restaurantId": 6,
-      "name": "Egg Hakka Noodles Regular",
+      "name": "Egg Chilly Oli Noodles",
       "price": 159,
-      "rating": 4.6,
+      "rating": 3.4,
       "category": "Pizza",
-      "description": "",
-      "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/FOOD_CATALOG/IMAGES/CMS/2025/5/21/5ec5f4a0-944a-4afc-aa69-a7d79a2f7723_15b316a1-0eb1-4583-9b79-d9bbcdab693a.png_compressed"
+      "description": "Serves 1 | Stir-fried noodles tossed in a bold and spicy crispy chili oil seasoning, mixed with fluffy scrambled eggs for a rich and flavorful twist. Served hot for the perfect balance of heat and comfort. (Serves 1-2) No Added MSG.",
+      "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/FOOD_CATALOG/IMAGES/CMS/2025/5/23/4bf1d2b8-1cf1-4146-b85b-c06f6b26439a_a43abfef-9f16-4a53-a3d9-b66f10abe765.png"
     },
     {
       "id": "224",
       "restaurantId": 6,
-      "name": "Egg Hakka Noodles Regular",
-      "price": 159,
-      "rating": 4.6,
+      "name": "Chicken American Chopsuey",
+      "price": 199,
+      "rating": 4.2,
       "category": "Pizza",
-      "description": "",
-      "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/FOOD_CATALOG/IMAGES/CMS/2025/5/21/5ec5f4a0-944a-4afc-aa69-a7d79a2f7723_15b316a1-0eb1-4583-9b79-d9bbcdab693a.png_compressed"
+      "description": "Serves 1 | Crispy fried noodles layered over sautéed vegetables and tender shredded chicken, all smothered in a tangy sweet and sour sauce. Topped with a sunny-side-up egg and finished with fresh spring onions, this dish combines rich flavors and satisfying textures in every bite. No added MSG. (Serves 1-2) (Approx).",
+      "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/FOOD_CATALOG/IMAGES/CMS/2025/5/23/97fda90a-6794-42f8-b8c5-b6b8e5cd4228_5c2d96a4-7eee-4407-82d6-c90996d184d8.png"
     },
     {
       "id": "225",
@@ -484,32 +484,32 @@
     {
       "id": "232",
       "restaurantId": 8,
-      "name": "Chicken Hyderabadi Dum Biryani [1/2 kg]",
-      "price": 389,
-      "rating": 4.3,
+      "name": "Gosht Keema Parantha",
+      "price": 129,
+      "rating": 3.9,
       "category": "Pizza",
-      "description": "[2 pcs] Fresh chicken are marinated in a mixture of freshly ground BBK spices & layered with long grain basmati rice in the handi and slow-cooked in the handi.",
-      "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/91a1a3aa8fd2c03443bedad1f8041e20"
+      "description": "Serves 1 | (Served with burani raita) minced mutton stuffed Tawa parantha.",
+      "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/FOOD_CATALOG/IMAGES/CMS/2025/3/7/adf0288a-10b1-4394-a210-54b99e5f2e3b_247188d0-4b7d-45f7-93ba-ae89183a0f14.jpg_compressed"
     },
     {
       "id": "233",
       "restaurantId": 8,
-      "name": "Chicken Hyderabadi Boneless Biryani - Single Portion",
-      "price": 339,
-      "rating": 4.2,
+      "name": "Gulab Jamun with Rabri [2pc]",
+      "price": 149,
+      "rating": 4.9,
       "category": "Pizza",
-      "description": "Serves 1 | Contains Boneless Fresh & Succulent Chicken marinated in a mixture of freshly ground BBK spices & layered with long grain basmati rice in the handi and slow cooked in handi. BBK biryani is layered, and Masala is at bottom of Handi. To enjoy authentic flavours mix it well.",
-      "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/op31wnxu1kcj9jdfdnfy"
+      "description": "Serves 1 | 2pcs Gulab Jamun served with Kesar Rabri.",
+      "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/FOOD_CATALOG/IMAGES/CMS/2025/3/7/a8a955ba-dbdf-4dec-bd05-149409fd85ee_5a8af757-8b8f-40a3-869b-bd6e2b9405b8.jpg_compressed"
     },
     {
       "id": "234",
       "restaurantId": 8,
-      "name": "Chicken Hyderabadi Boneless Biryani - Single Portion",
-      "price": 339,
+      "name": "Paneer 65 Combo",
+      "price": 539,
       "rating": 4.2,
       "category": "Pizza",
-      "description": "Serves 1 | Contains Boneless Fresh & Succulent Chicken marinated in a mixture of freshly ground BBK spices & layered with long grain basmati rice in the handi and slow cooked in handi. BBK biryani is layered, and Masala is at bottom of Handi. To enjoy authentic flavours mix it well.",
-      "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/op31wnxu1kcj9jdfdnfy"
+      "description": "Paneer 65 + 2 Rumali Roti + 2 Thums Up [250 Ml]",
+      "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/FOOD_CATALOG/IMAGES/CMS/2024/12/21/dd1cc707-0d8f-4c08-9bfa-354dd3c62cc8_c930cb07-4bf3-4d58-b783-8b0cfb9271c8.png"
     }
   ],
   "categories": [

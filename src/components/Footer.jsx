@@ -4,7 +4,7 @@ export default function Footer() {
     return (
         <footer className="bg-gray-100 text-gray-800 px-6 py-10">
             {/* Top App Download Section */}
-            <div className="flex flex-col md:flex-row justify-center items-center pb-6 mb-6 gap-4">
+            {/* <div className="flex flex-col md:flex-row justify-center items-center pb-6 mb-6 gap-4">
                 <h2 className="text-lg font-semibold mb-4 md:mb-0">
                    <b>For better experience, download the Swiggy app now</b>
                 </h2>
@@ -20,24 +20,24 @@ export default function Footer() {
                         className="w-32"
                     />
                 </div>
-            </div>
+            </div> */}
 
             {/* Main Footer Content */}
-            <div className="grid grid-cols-2 md:grid-cols-6 gap-8 text-sm">
+            <div className="flex justify-center">
                 {/* Logo */}
                 <div className="col-span-2 md:col-span-1">
                     <div className="flex flex-col gap-2">
                         <img
-                            src="https://1000logos.net/wp-content/uploads/2021/05/Swiggy-emblem.png"
+                            src="https://www.creativefabrica.com/wp-content/uploads/2018/10/Fast-Delivery-food-logo-by-DEEMKA-STUDIO-580x406.jpg"
                             alt="Swiggy Logo"
                             className="w-20"
                         />
-                        <p className="text-gray-600">© {new Date().getFullYear()} Swiggy Limited</p>
+                        <p className="text-gray-600">© {new Date().getFullYear()} Pratyush Kundu.All rights reserved</p>
                     </div>
                 </div>
 
                 {/* Company */}
-                <div>
+                {/* <div>
                     <h4 className="font-bold mb-2">Company</h4>
                     <ul className="space-y-1 text-gray-700">
                         <li>About Us</li>
@@ -51,10 +51,10 @@ export default function Footer() {
                         <li>Minis</li>
                         <li>Pyng</li>
                     </ul>
-                </div>
+                </div> */}
 
                 {/* Contact */}
-                <div>
+                {/* <div>
                     <h4 className="font-bold mb-2">Contact us</h4>
                     <ul className="space-y-1 text-gray-700">
                         <li>Help & Support</li>
@@ -68,10 +68,10 @@ export default function Footer() {
                         <li>Cookie Policy</li>
                         <li>Privacy Policy</li>
                     </ul>
-                </div>
+                </div> */}
 
                 {/* Locations */}
-                <div>
+                {/* <div>
                     <h4 className="font-bold mb-2">Available in:</h4>
                     <ul className="space-y-1 text-gray-700">
                         <li>Bangalore</li>
@@ -81,23 +81,23 @@ export default function Footer() {
                         <li>Mumbai</li>
                         <li>Pune</li>
                     </ul>
-                    {/* <select className="mt-2 border border-gray-300 rounded px-2 py-1 text-sm">
+                    <select className="mt-2 border border-gray-300 rounded px-2 py-1 text-sm">
                         <option>679 cities</option>
-                    </select> */}
-                </div>
+                    </select>
+                </div> */}
 
                 {/* Life at Swiggy */}
-                <div>
+                {/* <div>
                     <h4 className="font-bold mb-2">Life at Swiggy</h4>
                     <ul className="space-y-1 text-gray-700">
                         <li>Explore with Swiggy</li>
                         <li>Swiggy News</li>
                         <li>Snackables</li>
                     </ul>
-                </div>
+                </div> */}
 
                 {/* Social */}
-                <div>
+                {/* <div>
                     <h4 className="font-bold mb-2">Social Links</h4>
                     <div className="flex gap-3 text-gray-700 text-xl">
                         <i className="fi fi-brands-linkedin"></i>
@@ -106,7 +106,7 @@ export default function Footer() {
                         <i className="fi fi-brands-pinterest"></i>
                         <i className="fi fi-brands-twitter"></i>
                     </div>
-                </div>
+                </div> */}
             </div>
         </footer>
     );
