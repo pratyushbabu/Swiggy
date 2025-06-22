@@ -14,42 +14,24 @@ import Checkout from "./pages/Checkout"
 
 
 function App() {
-  // const [count, setCount] = useState(0)
-
-  const [foodName,setFoodName]=useState("")
-
-  const [restaurant,setRestaurant]=useState("")
-
-  const [restaurantId,setRestaurantId]=useState()
-
-  const [cartLength,setCartLength]=useState()
-
-  const [quantity,setQuantity]=useState(0)
-
+  const [foodName, setFoodName] = useState("");
+  const [restaurant, setRestaurant] = useState("");
+  const [restaurantId, setRestaurantId] = useState();
+  const [quantity, setQuantity] = useState(0);
   const location = useLocation();
 
-  const hideFooterPaths = ['/restaurant','/checkout']; // Add more paths if needed
-  const shouldShowFooter = !hideFooterPaths.includes(location.pathname);
-
-
-
-  console.log(quantity)
+  const hideFooter = location.pathname.startsWith('/restaurant') || location.pathname === '/checkout';
 
   return (
-    
     <div>
-      <Head quantity={quantity}/>
+      <Head quantity={quantity} />
       <Routes>
         <Route
           path="/"
           element={
             <>
-              <Categories
-                foodName={foodName}
-                setFoodName={setFoodName}
-              />
+              <Categories foodName={foodName} setFoodName={setFoodName} />
               <Resturent
-                // restaurant={restaurant}
                 setRestaurant={setRestaurant}
                 name={foodName}
                 setFoodName={setFoodName}
@@ -60,16 +42,33 @@ function App() {
         />
         <Route
           path="/restaurant/:id"
-          element={<Cart restaurantId={restaurantId}  name={foodName} restuName={restaurant} setQuantity={setQuantity}/>}
+          element={
+            <Cart
+              restaurantId={restaurantId}
+              name={foodName}
+              restuName={restaurant}
+              setQuantity={setQuantity}
+            />
+          }
         />
-
-        <Route path="/checkout" element={<Checkout name={foodName} restuName={restaurant} quantity={quantity} setQuantity={setQuantity}/>}/>
+        <Route
+          path="/checkout"
+          element={
+            <Checkout
+              name={foodName}
+              restuName={restaurant}
+              quantity={quantity}
+              setQuantity={setQuantity}
+            />
+          }
+        />
       </Routes>
 
-      {shouldShowFooter && <Footer />}
+      {!hideFooter && <Footer />}
     </div>
   );
 }
+
 
 export default App
 

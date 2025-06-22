@@ -5,6 +5,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 function Checkout(props) {
   const [cartData, setCartData] = useState([]);
+  const navigate=useNavigate()
  
   const fetchCartData = () => {
     fetch("http://localhost:3000/checkout")
@@ -49,7 +50,7 @@ function Checkout(props) {
     }
   };
 
-const navigate=useNavigate()
+
 
   const HandleRestaurants=()=>{
     navigate("/")
