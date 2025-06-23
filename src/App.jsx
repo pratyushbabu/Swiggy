@@ -17,7 +17,7 @@ function App() {
   const [foodName, setFoodName] = useState("");
   const [restaurant, setRestaurant] = useState("");
   const [restaurantId, setRestaurantId] = useState();
-  const [quantity, setQuantity] = useState(0);
+  const [quantity, setQuantity] = useState(localStorage.getItem("totalQuantity"));
   const location = useLocation();
 
   const hideFooter = location.pathname.startsWith('/restaurant') || location.pathname === '/checkout';
