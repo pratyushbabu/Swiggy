@@ -14,12 +14,12 @@ function Head(props) {
   return (
     <div className='w-full shadow-md h-20 flex justify-c items-center'>
       <div className='w-full flex justify-between sticky'>
-        <div className='ml-32 w-30 h-30'>
+        <div className='ml-32'>
           <Link to="/">
             <img
               src="https://www.creativefabrica.com/wp-content/uploads/2018/10/Fast-Delivery-food-logo-by-DEEMKA-STUDIO-580x406.jpg"
               alt="Swiggy Logo"
-              className="w-20 h-25 "
+              className="w-28 object-contain"
             />
           </Link>
         </div>
