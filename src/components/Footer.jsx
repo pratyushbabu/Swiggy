@@ -26,13 +26,15 @@ export default function Footer() {
             <div className="flex justify-center items-center">
                 {/* Logo */}
                 <div className="col-span-2 md:col-span-1">
-                    <div className="flex flex-col gap-2  items-center">
+                    <div className="flex flex-col gap-2 items-center bg-gray-100 p-4">
                         <img 
-                            src="https://www.creativefabrica.com/wp-content/uploads/2018/10/Fast-Delivery-food-logo-by-DEEMKA-STUDIO-580x406.jpg"
-                            alt="Swiggy Logo"
-                            className="w-20 "
+                            src=".\src\assets\Foodies.png"
+                            alt="Fast Delivery Logo"
+                            className="w-20 bg-gray-100"
                         />
-                        <p className="text-gray-600">© {new Date().getFullYear()} Foodies.All rights reserved</p>
+                        <p className="text-gray-800">
+                            © {new Date().getFullYear()} Foodies. All rights reserved
+                        </p>
                     </div>
                 </div>
 
