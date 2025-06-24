@@ -30,7 +30,7 @@ export default function Footer() {
                         <img 
                             src="https://www.creativefabrica.com/wp-content/uploads/2018/10/Fast-Delivery-food-logo-by-DEEMKA-STUDIO-580x406.jpg"
                             alt="Swiggy Logo"
-                            className="w-20"
+                            className="w-20 "
                         />
                         <p className="text-gray-600">© {new Date().getFullYear()} Foodies.All rights reserved</p>
                     </div>

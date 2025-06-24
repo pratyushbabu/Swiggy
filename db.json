@@ -147,7 +147,7 @@
       "name": "Cheesy Macaroni Veg Pizza",
       "price": 275,
       "rating": 3.6,
-      "category": "non veg",
+      "category": "nonveg",
       "description": "Paneer, Onions, Capsicum, Olives, Baby Corn With Loads Of Cheese.",
       "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/qshil15ztkifwocci9iw"
     },
@@ -157,7 +157,7 @@
       "name": "Bbq Chicken Pizza Regular",
       "price": 129,
       "rating": 3.7,
-      "category": "non veg",
+      "category": "nonveg",
       "description": "Bbq Chicken On A Pizza Base With Loads Of Cheese & In House Bbq Sauce.",
       "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/FOOD_CATALOG/IMAGES/CMS/2025/5/8/1d2048dd-cded-4f9a-a3f6-9e9efc82a942_4ef3f79c-eafc-4247-bc37-3dc262e135ee.JPG"
     },
