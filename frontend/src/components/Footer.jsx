@@ -27,11 +27,11 @@ export default function Footer() {
                 {/* Logo */}
                 <div className="col-span-2 md:col-span-1">
                     <div className="flex flex-col gap-2 items-center bg-gray-100 p-4">
-                        {/* <img
+                        <img 
                             src=".\src\assets\Foodies.png"
                             alt="Fast Delivery Logo"
                             className="w-20 bg-gray-100"
-                        /> */}
+                        />
                         <p className="text-gray-800">
                             © {new Date().getFullYear()} Foodies. All rights reserved
                         </p>
