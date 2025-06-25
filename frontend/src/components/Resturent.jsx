@@ -12,7 +12,7 @@ export default function Resturent({ name, setFoodName }) {
   useEffect(() => {
     const fetchRestaurantData = async () => {
       try {
-        const response = await fetch("http://localhost:3000/restaurants");
+        const response = await fetch("https://swiggy-10.onrender.com/restaurants");
         const data = await response.json();
 
         const filtered = data.filter(el =>

@@ -1,5 +1,15 @@
 {
-  "checkout": [],
+  "checkout": [
+    {
+      "id": "67f4",
+      "foodName": "Veggie Hakka Noodles Regular",
+      "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/abmo32th97dyasxyft28",
+      "price": 129,
+      "quantity": 1,
+      "description": "",
+      "restaurant": "Wow!China"
+    }
+  ],
   "restaurants": [
     {
       "id": "1",

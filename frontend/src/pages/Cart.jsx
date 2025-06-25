@@ -11,16 +11,16 @@ function Cart(props) {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const restRes = await fetch("http://localhost:3000/restaurants");
+        const restRes = await fetch("https://swiggy-10.onrender.com/restaurants");
         const allRestaurants = await restRes.json();
         const matched = allRestaurants.find(r => r.id.toString() === restaurantId);
         setRestaurantName(matched?.name || "Restaurant");
 
-        const menuRes = await fetch(`http://localhost:3000/menuItems/?restaurantId=${restaurantId}`);
+        const menuRes = await fetch(`https://swiggy-10.onrender.com/menuItems/?restaurantId=${restaurantId}`);
         const menuData = await menuRes.json();
         setMenu(menuData);
 
-        const checkoutRes = await fetch("http://localhost:3000/checkout");
+        const checkoutRes = await fetch("https://swiggy-10.onrender.com/checkout");
         const checkoutData = await checkoutRes.json();
         setCheckoutData(checkoutData);
       } catch (err) {
@@ -49,19 +49,19 @@ function Cart(props) {
         if (!confirmReplace) return;
 
         for (const ci of checkoutData) {
-          await fetch(`http://localhost:3000/checkout/${ci.id}`, { method: "DELETE" });
+          await fetch(`https://swiggy-10.onrender.com/checkout/${ci.id}`, { method: "DELETE" });
         }
         setCheckoutData([]);
       }
 
       if (existing) {
-        await fetch(`http://localhost:3000/checkout/${existing.id}`, {
+        await fetch(`https://swiggy-10.onrender.com/checkout/${existing.id}`, {
           method: "PATCH",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ quantity: existing.quantity + 1 }),
         });
       } else {
-        await fetch("http://localhost:3000/checkout", {
+        await fetch("https://swiggy-10.onrender.com/checkout", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
@@ -75,7 +75,7 @@ function Cart(props) {
         });
       }
 
-      const updated = await fetch("http://localhost:3000/checkout");
+      const updated = await fetch("https://swiggy-10.onrender.com/checkout");
       const updatedData = await updated.json();
       setCheckoutData(updatedData);
     } catch (error) {
@@ -86,16 +86,16 @@ function Cart(props) {
   const updateQuantity = async (id, qty) => {
     try {
       if (qty <= 0) {
-        await fetch(`http://localhost:3000/checkout/${id}`, { method: "DELETE" });
+        await fetch(`https://swiggy-10.onrender.com/checkout/${id}`, { method: "DELETE" });
       } else {
-        await fetch(`http://localhost:3000/checkout/${id}`, {
+        await fetch(`https://swiggy-10.onrender.com/checkout/${id}`, {
           method: "PATCH",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ quantity: qty }),
         });
       }
 
-      const updated = await fetch("http://localhost:3000/checkout");
+      const updated = await fetch("https://swiggy-10.onrender.com/checkout");
       const updatedData = await updated.json();
       setCheckoutData(updatedData);
     } catch (error) {
@@ -248,20 +248,20 @@ export default Cart;
 //     const fetchData = async () => {
 //       try {
 //         // Fetch all restaurants and find the current one by ID
-//         const restRes = await fetch("http://localhost:3000/restaurants");
+//         const restRes = await fetch("https://swiggy-10.onrender.com/restaurants");
 //         const allRestaurants = await restRes.json();
 //         const matched = allRestaurants.find(r => r.id.toString() === restaurantId);
         
 //         setRestaurantName(matched?.name || "Restaurant");
 
 //         // Fetch menu for the restaurant
-//         const menuRes = await fetch(`http://localhost:3000/menuItems/?restaurantId=${restaurantId}`);
+//         const menuRes = await fetch(`https://swiggy-10.onrender.com//menuItems/?restaurantId=${restaurantId}`);
 //         const menuData = await menuRes.json();
 //         console.log("Menudata~~~~~->",menuData)
 //         setMenu(menuData);
 
 //         // Fetch checkout data
-//         const checkoutRes = await fetch("http://localhost:3000/checkout");
+//         const checkoutRes = await fetch("https://swiggy-10.onrender.com//checkout");
 //         const checkoutData = await checkoutRes.json();
 //         setCheckoutData(checkoutData);
 //       } catch (err) {
@@ -295,7 +295,7 @@ export default Cart;
 
 //         // Clear existing cart
 //         for (const ci of checkoutData) {
-//           await fetch(`http://localhost:3000/checkout/${ci.id}`, {
+//           await fetch(`https://swiggy-10.onrender.com//checkout/${ci.id}`, {
 //             method: "DELETE",
 //           });
 //         }
@@ -306,7 +306,7 @@ export default Cart;
 
 //       if (existing) {
 
-//         await fetch(`http://localhost:3000/checkout/${existing.id}`, {
+//         await fetch(`https://swiggy-10.onrender.com//checkout/${existing.id}`, {
 //           method: "PATCH",
 //           headers: { "Content-Type": "application/json" },
 //           body: JSON.stringify({ quantity: existing.quantity + 1 }),
@@ -314,7 +314,7 @@ export default Cart;
 //       } else {
 
 
-//         await fetch("http://localhost:3000/checkout", {
+//         await fetch("https://swiggy-10.onrender.com//checkout", {
 //           method: "POST",
 //           headers: { "Content-Type": "application/json" },
 //           body: JSON.stringify({
@@ -328,7 +328,7 @@ export default Cart;
 //         });
 //       }
 
-//       const updated = await fetch("http://localhost:3000/checkout");
+//       const updated = await fetch("https://swiggy-10.onrender.com//checkout");
 //       const updatedData = await updated.json();
 //       setCheckoutData(updatedData);
 
@@ -341,16 +341,16 @@ export default Cart;
 //   const updateQuantity = async (id, qty) => {
 //     try {
 //       if (qty <= 0) {
-//         await fetch(`http://localhost:3000/checkout/${id}`, { method: "DELETE" });
+//         await fetch(`https://swiggy-10.onrender.com//checkout/${id}`, { method: "DELETE" });
 //       } else {
-//         await fetch(`http://localhost:3000/checkout/${id}`, {
+//         await fetch(`https://swiggy-10.onrender.com//checkout/${id}`, {
 //           method: "PATCH",
 //           headers: { "Content-Type": "application/json" },
 //           body: JSON.stringify({ quantity: qty }),
 //         });
 //       }
 
-//       const updated = await fetch("http://localhost:3000/checkout");
+//       const updated = await fetch("https://swiggy-10.onrender.com//checkout");
 //       const updatedData = await updated.json();
 //       setCheckoutData(updatedData);
 //     } catch (error) {

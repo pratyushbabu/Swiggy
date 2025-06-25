@@ -8,7 +8,7 @@ function Checkout(props) {
   const navigate=useNavigate()
  
   const fetchCartData = () => {
-    fetch("http://localhost:3000/checkout")
+    fetch("https://swiggy-10.onrender.com/checkout")
       .then(res => res.json())
       .then(setCartData)
       .catch(err => console.error("Error fetching cart data:", err));
@@ -34,12 +34,12 @@ function Checkout(props) {
         localStorage.setItem("totalQuantity",newQty)
         props.setQuantity(newQty)
       if (newQty < 1) {
-        await fetch(`http://localhost:3000/checkout/${id}`, { method: 'DELETE' });
+        await fetch(`https://swiggy-10.onrender.com/checkout/${id}`, { method: 'DELETE' });
         fetchCartData();
         return;
       }
 
-      await fetch(`http://localhost:3000/checkout/${id}`, {
+      await fetch(`https://swiggy-10.onrender.com/checkout/${id}`, {
         method: 'PATCH',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ quantity: newQty })
@@ -64,7 +64,7 @@ function Checkout(props) {
 
       await Promise.all(
         ids.map(id =>
-          fetch(`http://localhost:3000/checkout/${id}`, { method: 'DELETE' })
+          fetch(`https://swiggy-10.onrender.com/checkout/${id}`, { method: 'DELETE' })
         )
       );
 

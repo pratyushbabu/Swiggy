@@ -12,7 +12,7 @@ export default function Categories(props) {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch("http://localhost:3000/categories");
+                const response = await fetch("https://swiggy-10.onrender.com/categories");
                 const result = await response.json();
                 setData(result)
                 console.log(result);
